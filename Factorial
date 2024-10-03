@@ -1,0 +1,22 @@
+..
+Write the program to count the number of times the given number (x) is present in the given tuple list and print it's factorial value without using factorial() method.
+..
+def calculate_factorial(n):
+    factorial = 1
+    for i in range(1, n + 1):
+        factorial *= i
+    return factorial
+numbers = input().split()
+number_tuple = tuple(int(num) for num in numbers)
+x = int(input())
+count = number_tuple.count(x)
+factorial_value = calculate_factorial(count)
+print(factorial_value)
+..
+Sample Input:
+1 2 3 4 1 5 1
+1
+Sample Output:
+6
+
+..
